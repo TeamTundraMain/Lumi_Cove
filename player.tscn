@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cee4dgxn2nyqx"]
+
+[ext_resource type="Texture2D" uid="uid://dpcrftrqovxwg" path="res://LumiTestIdleSprite.png" id="1_4flbx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
+size = Vector2(147.5, 418.5)
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-35, -249)
+scale = Vector2(0.141935, 0.141935)
+texture = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-44, -239.75)
+shape = SubResource("RectangleShape2D_onrkg")
