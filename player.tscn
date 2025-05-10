@@ -1,11 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://cee4dgxn2nyqx"]
+[gd_scene load_steps=4 format=3 uid="uid://cee4dgxn2nyqx"]
 
 [ext_resource type="Texture2D" uid="uid://dpcrftrqovxwg" path="res://LumiTestIdleSprite.png" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://dq3sg7o76xbwg" path="res://player.gd" id="1_onrkg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
 size = Vector2(147.5, 418.5)
 
 [node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_onrkg")
+move_speed = 500.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-35, -249)
